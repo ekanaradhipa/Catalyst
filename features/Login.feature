@@ -1,5 +1,5 @@
 @Login
-Feature: Login
+Feature: Main
 
 @Login
 Scenario: Login Page
@@ -14,3 +14,10 @@ Then I enter email
 And I enter password
 And I submit
 Then I login
+
+@Cart
+Scenario: Add item to cart
+Given I login
+And I go to Item Page
+And I add to cart
+

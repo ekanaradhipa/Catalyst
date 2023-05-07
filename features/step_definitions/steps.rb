@@ -10,7 +10,7 @@ driver = Selenium::WebDriver.for:chrome
 Given("I open voila") do
 
  driver.navigate.to "https://voila.id/"
- sleep(2) #wait for page to load
+ sleep(1) #wait for page to load
  p "wake up"
  
 end
@@ -62,3 +62,24 @@ Then('I login') do
   el = driver.find_element(:xpath, "//*[@class='tt-title']")
   assert_not_nil(el, "error")
 end
+
+When('I go to Men Page') do
+  driver.find_element(:xpath, "//*[@href='/collections/men']").click
+end
+
+And('I go to Item Page') do
+	driver.navigate.to "https://voila.id/collections/men/products/lifework-graphic-drawstring-hoodie-black-green"
+ sleep(1) #wait for page to load
+end
+
+And('I add to cart') do
+  driver.action
+        .scroll_by(0,285)
+        .perform
+   sleep(1)
+   driver.find_element(:xpath, "//*[@class='btn btn-lg btn-addtocart addtocart-js']").click
+   sleep(4)
+   driver.find_element(:xpath, "//*[@class='btn btn-border ttmodalbtn ttmodalbtn']").click
+   sleep(4)
+end
+

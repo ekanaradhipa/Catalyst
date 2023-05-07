@@ -1,15 +1,16 @@
 require 'selenium-webdriver'
 require 'rubygems'
 require 'rspec'
-#require 'v8'
 
-driver = Selenium::WebDriver.for:firefox
-#object_v8 = V8::Context.new
+require "test/unit/assertions"
+include Test::Unit::Assertions
+
+driver = Selenium::WebDriver.for:chrome
 
 Given("I open voila") do
 
  driver.navigate.to "https://voila.id/"
- sleep(5) #wait for page to load
+ sleep(2) #wait for page to load
  p "wake up"
  
 end
@@ -28,9 +29,9 @@ Given('I open Login Page') do
 end
 
 Then('I see Login Page') do
-  #assert_not_nil(driver.find_element(:xpath, "//*[@class='tt-title']"), "No response from Server!")
-  driver.find_element(:xpath, "//*[@class='tt-title']")
-  sleep(0.5) #wait for page to load
+  el = driver.find_element(:xpath, "//*[@class='tt-title']")
+  assert_not_nil(el, "error")
+
 end
 
 
@@ -47,10 +48,17 @@ end
 
 Then('I submit') do
   #element = driver.find_element(:xpath, "//*[@type='submit']")
-   driver.find_element(:xpath, "//*[@type='password']").click
+  #el = driver.find_element(:xpath, "//button[@type='submit']")
+  
+  driver.action
+        .scroll_by(0,75)
+        .perform
+   sleep(2)
+   driver.find_element(:xpath, "//*[@class='btn btn-border']").click
   #element_near.location_once_scrolled_into_view
 end
 
 Then('I login') do
-  driver.find_element(:xpath, "//*[@class='tt-title']")
+  el = driver.find_element(:xpath, "//*[@class='tt-title']")
+  assert_not_nil(el, "error")
 end

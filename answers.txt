@@ -1,0 +1,28 @@
+Answer for general questions:
+
+Q:
+1. Can you tell us about your passion?
+2. Why do you want to be a QA Engineer?
+3. What is your goal as a QA Engineer ?
+4. How do you plan your goal as a QA Engineer ?
+5. What is your expectation, If you join with Catalyst as a QA Engineer ?
+
+A:
+1. My passion is honestly something relating to Computer Software. I've played with computers
+for a long time, so I guess my job is always related to it.
+
+2.I think because if my background in IT major, I'm always interested in programming matters. 
+At the same time, I see sometimes developer needs extra help on ensuring the quality of their code.
+This is why I like being a QA Engineer, to give devs extra hands
+
+3.If I look on the work side, I strive to make sure each feature that the dev created got covered in a
+comprehensive test cases. Each features should also be well documented, and alongside it, evidence of
+testing. On the other hand, if we look on career path, I want to improve both my skill as a QA Engineer
+and my skill at working with others, in hope I could be an experienced senior and have easier time
+teaching other the importance of testing
+
+4.To reach my goal, I would make sure to gave each of my task a clear test cases and documentation
+that could be understood by all of my teammates, whether its other QA, developer, or product and managers.
+At the same time, I would like to develop my skills with the help of other teammates too.
+
+5. I expect to learn more skills relating to QA Testing and met kind and helpful teammates and supervisors.

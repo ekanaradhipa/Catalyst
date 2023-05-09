@@ -25,7 +25,9 @@ teaching other the importance of testing
 that could be understood by all of my teammates, whether its other QA, developer, or product and managers.
 At the same time, I would like to develop my skills with the help of other teammates too.
 
-5. I expect to learn more skills relating to QA Testing and met kind and helpful teammates and supervisors.
+5. I expect to learn more skills relating to QA Testing and met kind and helpful teammates and supervisors. At the same time
+I do have a wish of learning more about manager's responsibility, since I learned that it is also important to understand
+ your co-worker, just as it important to understand one's code and bugs.
 
 For technical questions:
 1. I did testing automation until I reach checkout page, please run the Login.feature file. Unfortunately, I didn't finish the process to create orders

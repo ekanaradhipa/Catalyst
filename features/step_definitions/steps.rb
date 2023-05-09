@@ -83,3 +83,12 @@ And('I add to cart') do
    sleep(4)
 end
 
+And('I enter address') do
+  driver.action
+        .scroll_by(0,285)
+        .perform
+   sleep(1)
+   driver.find_element(:xpath, "//*[@class='btn btn-lg']").click
+   sleep(1)
+end
+

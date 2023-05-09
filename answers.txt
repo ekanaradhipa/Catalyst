@@ -26,3 +26,20 @@ that could be understood by all of my teammates, whether its other QA, developer
 At the same time, I would like to develop my skills with the help of other teammates too.
 
 5. I expect to learn more skills relating to QA Testing and met kind and helpful teammates and supervisors.
+
+For technical questions:
+1. I did testing automation until I reach checkout page, please run the Login.feature file. Unfortunately, I didn't finish the process to create orders
+because it might jeopardize real life data and I have problem inputting the address
+
+2. 
+I made some extra test cases side from the Login.feature, which isn't implemented yet, but should cover as many cases I could
+
+Also for bugs, as a QA Candidate, I could only suggests some feature that might be improved, but couldn't really decide
+the feature is bugged or not since I do not know the original requirements. Here is my suggestions:
+
+-If User click checkout when he/she didn't have any item on cart, it redirects to homepage. Perhaps similar message like
+"cart empty" could be added
+-The header could be adjusted more since on my browser, I need to scroll down to see the page to see the content of the page.
+This is also reflected on the automation test cases where I need to scroll down to interact with the object.
+-Continuing from previous point, the Payment Confirmation page has an image covering the top of the page, which make user
+needs to scroll down more to see the form.

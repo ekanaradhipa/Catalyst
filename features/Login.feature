@@ -20,4 +20,4 @@ Scenario: Add item to cart
 Given I login
 And I go to Item Page
 And I add to cart
-
+And I enter address
